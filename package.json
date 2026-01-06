@@ -1,0 +1,13 @@
+{
+  "name": "envio-pnpm-workspace-repro",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal reproduction: envio codegen fails in pnpm workspace",
+  "scripts": {
+    "codegen": "pnpm --filter @repro/indexer codegen",
+    "build": "pnpm --filter @repro/indexer build"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

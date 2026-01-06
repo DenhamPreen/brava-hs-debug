@@ -1,0 +1,19 @@
+name: repro-indexer
+description: Minimal reproduction for envio codegen pnpm workspace issue
+
+contracts:
+  - name: ERC20
+    events:
+      - event: Transfer(address indexed from, address indexed to, uint256 value)
+    handler: src/EventHandlers.ts
+
+networks:
+  - id: 1
+    rpc:
+      - url: https://ethereum-rpc.publicnode.com
+        for: fallback
+    start_block: 19000000
+    contracts:
+      - name: ERC20
+        address: 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
+

@@ -1,0 +1,9 @@
+type TransferEvent {
+  id: ID!
+  from: String!
+  to: String!
+  value: String!
+  blockNumber: Int!
+  blockTimestamp: Int!
+}
+
