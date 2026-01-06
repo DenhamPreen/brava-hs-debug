@@ -4,7 +4,8 @@
   "description": "Envio indexer in pnpm workspace",
   "scripts": {
     "codegen": "envio codegen",
-    "build": "envio codegen && tsc --build"
+    "build": "envio codegen && tsc --build",
+    "start": "envio start"
   },
   "devDependencies": {
     "@types/chai": "^4.3.11",
@@ -25,4 +26,3 @@
     "node": ">=18.0.0"
   }
 }
-
